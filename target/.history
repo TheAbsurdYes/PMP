@@ -5,3 +5,20 @@ exit
 runMain Test
 runMain Lab5.Ex1
 exit
+exir
+exit
+runMain Test
+exit
+def square(x: Double) = x * x
+scala
+def square(x: Double) = x * x
+exit
+scala
+last
+ls
+exit
+run
+runMain Test
+exit
+runMain Lab2.Ex1
+exit
