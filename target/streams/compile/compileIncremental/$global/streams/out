@@ -18,7 +18,7 @@
 [0m[[0minfo[0m] [0mCompiling 14 Scala sources to C:\Users\adria\Documents\PMP\target\scala-2.12\classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.16:component from component compiler for Scala 2.12.2[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.16:component from component compiler for Scala 2.12.2[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 6a991a3b, interfacing (CompilerInterface) with Scala compiler version 2.12.2[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3a8b69cd, interfacing (CompilerInterface) with Scala compiler version 2.12.2[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-feature[0m
 [0m[[0mdebug[0m] [0m	-language:existentials[0m
@@ -31,27 +31,12 @@
 [0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:10: missing parameter type for expanded function ((x$1: <error>) => scala.Tuple2(materie, x$1))[0m
 [0m[[31merror[0m] [0m        materii.indexOf((materie,_))._2 = nota [0m
 [0m[[31merror[0m] [0m                                 ^[0m
-[0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:14: value +: is not a member of (String, Integer)[0m
+[0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:14: value +: is not a member of (String, Int)[0m
 [0m[[31merror[0m] [0m        materii = materii +: (materie,nota)[0m
 [0m[[31merror[0m] [0m                          ^[0m
 [0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:18: missing parameter type for expanded function ((x$3: <error>) => scala.Tuple2(materie, x$3))[0m
 [0m[[31merror[0m] [0m        println(materii.indexOf((materie,_))._2)[0m
 [0m[[31merror[0m] [0m                                         ^[0m
-[0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:35: type mismatch;[0m
-[0m[[31merror[0m] [0m found   : Array[(String, Int)][0m
-[0m[[31merror[0m] [0m required: Array[(String, Integer)][0m
-[0m[[31merror[0m] [0m        val a1 = new Student("Gigel","Popescu",1,list zip Array.fill(3){scala.util.Random.nextInt(11)})[0m
-[0m[[31merror[0m] [0m                                                      ^[0m
-[0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:36: type mismatch;[0m
-[0m[[31merror[0m] [0m found   : Array[(String, Int)][0m
-[0m[[31merror[0m] [0m required: Array[(String, Integer)][0m
-[0m[[31merror[0m] [0m        val a2 = new Student("Marinela","Alelia",1,list zip Array.fill(3){scala.util.Random.nextInt(11)})[0m
-[0m[[31merror[0m] [0m                                                        ^[0m
-[0m[[31merror[0m] [0mC:\Users\adria\Documents\PMP\src\main\scala\Lab2\Ex1.scala:37: type mismatch;[0m
-[0m[[31merror[0m] [0m found   : Array[(String, Int)][0m
-[0m[[31merror[0m] [0m required: Array[(String, Integer)][0m
-[0m[[31merror[0m] [0m        val a3 = new Student("Gica","Petrescu",1,list zip Array.fill(3){scala.util.Random.nextInt(11)})[0m
-[0m[[31merror[0m] [0m                                                      ^[0m
-[0m[[31merror[0m] [0m6 errors found[0m
+[0m[[31merror[0m] [0mthree errors found[0m
 [0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
 [0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m

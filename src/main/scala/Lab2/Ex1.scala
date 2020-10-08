@@ -5,12 +5,12 @@ import com.cra.figaro.algorithm.sampling._
 
 abstract class Persoana
 
-class Student(var nume: String, var prenume: String, var an: Int, var materii: Array[(String,Integer)]) extends Persoana{
-    def setNota(materie: String, nota: Integer){
+class Student(var nume: String, var prenume: String, var an: Int, var materii: Array[(String,Int)]) extends Persoana{
+    def setNota(materie: String, nota: Int){
         materii.indexOf((materie,_))._2 = nota 
     }
     
-    def addMaterie(materie: String, nota: Integer){
+    def addMaterie(materie: String, nota: Int){
         materii = materii +: (materie,nota)
     }
 
