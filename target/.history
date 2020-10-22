@@ -24,3 +24,26 @@ runMain Lab2.Ex1
 exit
 runMain Lab2.Ex1
 exit
+clean
+compile
+update
+compile
+clean
+runMain Lab2.Ex1
+exit
+:q
+exit
+clean
+compile
+clean
+compile
+runMain Lab2.Ex1
+runMain Lab3.Ex1
+runMain Lab2.Ex1
+exit
+runMain Lab3.Ex1
+exit
+runMain Lab4.Ex1
+runMain Lab4.HelloWorld
+runMain Lab4.Ex3
+runMain Lab4.Ex4

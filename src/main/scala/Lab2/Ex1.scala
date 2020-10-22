@@ -19,8 +19,8 @@ class Student(var nume: String, var prenume: String, var an: Int, var materii: A
 class Profesor(var nume: String,var prenume: String, var materie: String) extends Persoana 
 
 object Ex1{
-    def whatIs(x: Persoana){
-        x.getClass().getSimpleName() match{
+    def whatIs(x: Persoana): Unit = {
+        x.getClass.getSimpleName match{
             case "Student" => println("Este student.")
             case "Profesor" => println("Este profesor.")
             case _ => println("Necunoscut")
@@ -28,7 +28,7 @@ object Ex1{
     }
 
     def main(args: Array[String]){
-        var list = Array("Logica","Mate","Sport")
+        val list = Array("Logica", "Mate", "Sport")
         val a1 = new Student("Gigel","Popescu",1,list zip Array.fill(3){scala.util.Random.nextInt(11)})
         val a2 = new Student("Marinela","Alelia",1,list zip Array.fill(3){scala.util.Random.nextInt(11)})
         val a3 = new Student("Gica","Petrescu",1,list zip Array.fill(3){scala.util.Random.nextInt(11)})
