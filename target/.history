@@ -47,3 +47,25 @@ runMain Lab4.Ex1
 runMain Lab4.HelloWorld
 runMain Lab4.Ex3
 runMain Lab4.Ex4
+clean
+compile
+runMain curs4.Ex1
+exit
+clean compile
+clean ; compile
+clean : compile
+clean
+compile
+runMain curs4.Ex1
+runMain curs4.Ex4
+runMain curs4.Ex1
+clean
+compile
+runMain curs4.Ex1
+exit
+clean
+compile
+clean
+compile
+runMain Lab5.Ex1
+exit

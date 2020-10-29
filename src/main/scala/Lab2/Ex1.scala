@@ -12,15 +12,15 @@ class Student(var nume: String, var prenume: String, var an: Int, var materii: A
     }
 
     def getNota(materie: String){
-        materii.foreach(x => if (x._1 == materie) println(x._2))
+        materii foreach (x => if (x._1 == materie) println(x._2))
     }
 }
 
 class Profesor(var nume: String,var prenume: String, var materie: String) extends Persoana 
 
 object Ex1{
-    def whatIs(x: Persoana): Unit = {
-        x.getClass.getSimpleName match{
+    def whatIs(x: Persoana) {
+        x.getClass.getSimpleName match {
             case "Student" => println("Este student.")
             case "Profesor" => println("Este profesor.")
             case _ => println("Necunoscut")
