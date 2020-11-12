@@ -1,11 +1,16 @@
 package Lab6
 
+import com.cra.figaro.algorithm.sampling.Importance
 import com.cra.figaro.language._
 import com.cra.figaro.library.compound.If
 
 object Ex6 {
   def main(args: Array[String]): Unit = {
+      var win = tennis(0.5, 0.5, 0.5, 0.5, 0.5, 0.5)
 
+      val alg = Importance([Un numar de repetari], win)
+      alg.start()
+      println(alg.probability(win,true))
   }
 
   def tennis(
