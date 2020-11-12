@@ -69,3 +69,6 @@ clean
 compile
 runMain Lab5.Ex1
 exit
+clean
+compile
+runMain Lab7.Ex1
