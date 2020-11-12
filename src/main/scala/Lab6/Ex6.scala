@@ -8,7 +8,7 @@ object Ex6 {
   def main(args: Array[String]): Unit = {
       var win = tennis(0.5, 0.5, 0.5, 0.5, 0.5, 0.5)
 
-      val alg = Importance([Un numar de repetari], win)
+      val alg = Importance(6, win)
       alg.start()
       println(alg.probability(win,true))
   }
