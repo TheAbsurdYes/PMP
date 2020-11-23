@@ -7,8 +7,23 @@
 		revision="0.1-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20201112082920"/>
+		date="20201123231710"/>
 	<dependencies>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.12" status="release" pubdate="20200713030406" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.12.12/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2678" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.12/scala-reflect-2.12.12.pom"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.6.1"/>
+				<caller organisation="org.scalanlp" name="breeze-macros_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.13.1"/>
+				<caller organisation="io.argonaut" name="argonaut_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="6.2"/>
+				<caller organisation="com.cra.figaro" name="figaro_2.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="5.0.0.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3644859" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.12.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.cra.figaro" name="figaro_2.12">
 			<revision name="5.0.0.0" status="release" pubdate="20170824204812" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.github.com/p2t2/figaro" downloaded="false" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Figaro License" url="https://github.com/p2t2/figaro/blob/master/LICENSE"/>
@@ -343,41 +358,26 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.12.2" status="release" pubdate="20170413111812" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2.pom"/>
-				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.6.1"/>
-				<caller organisation="org.scalanlp" name="breeze-macros_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.13.1"/>
-				<caller organisation="io.argonaut" name="argonaut_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="6.2"/>
-				<caller organisation="com.cra.figaro" name="figaro_2.12" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="5.0.0.0"/>
-				<artifacts>
-					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3553181" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.12.2" status="release" pubdate="20170413111911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.pom"/>
-				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.3.2"/>
-				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.6.1"/>
-				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.8.0"/>
-				<caller organisation="org.scala-lang.modules" name="scala-swing_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.0.0"/>
-				<caller organisation="figarowork" name="figarowork_2.12" conf="test, compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.1-SNAPSHOT"/>
-				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.12.2"/>
-				<caller organisation="org.scalanlp" name="breeze-macros_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.13.1"/>
-				<caller organisation="org.spire-math" name="spire_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.13.0"/>
-				<caller organisation="org.spire-math" name="spire-macros_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.13.0"/>
-				<caller organisation="org.scalanlp" name="breeze_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.13.1"/>
-				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="1.1.1"/>
-				<caller organisation="com.cra.figaro" name="figaro_2.12" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="5.0.0.0"/>
-				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.4.18"/>
+			<revision name="2.12.12" status="release" pubdate="20200713030637" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.12.12/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2508" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12.pom"/>
+				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.3.2"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.6.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.8.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-swing_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.0.0"/>
+				<caller organisation="figarowork" name="figarowork_2.12" conf="test, compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="org.scalanlp" name="breeze-macros_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.13.1"/>
+				<caller organisation="org.spire-math" name="spire_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.13.0"/>
+				<caller organisation="org.spire-math" name="spire-macros_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.13.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.12.12"/>
+				<caller organisation="org.scalanlp" name="breeze_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="0.13.1"/>
+				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="1.1.1"/>
+				<caller organisation="com.cra.figaro" name="figaro_2.12" conf="default, compile, runtime, master" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="5.0.0.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="compile, runtime" rev="2.12.12" rev-constraint-default="2.12.12" rev-constraint-dynamic="2.12.12" callerrev="2.4.18"/>
 				<artifacts>
-					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5278660" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar"/>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5432322" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.12.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
 				</artifacts>
 			</revision>
