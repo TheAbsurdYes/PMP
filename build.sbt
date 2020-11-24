@@ -2,7 +2,7 @@ import sbt._
 import Keys._
 
   lazy val figaroWorkSettings =  Seq(
-    scalaVersion := "2.12.12",
+    scalaVersion := "2.12.2",
     retrieveManaged := true
   )
 

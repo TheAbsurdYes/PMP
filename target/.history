@@ -72,3 +72,9 @@ exit
 clean
 compile
 runMain Lab7.Ex1
+exit
+clean 
+compile
+runMain Lab10.Ex1
+exit
+nvim exercitii.Ex1

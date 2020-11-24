@@ -9,10 +9,10 @@
 		extra-sbtVersion="0.13"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20201123231408"/>
+		date="20201123234243"/>
 	<dependencies>
 		<module organisation="ch.epfl.scala" name="sbt-bloop">
-			<revision name="1.4.5-6-4768184c" status="release" pubdate="20201111144622" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalacenter/bloop" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="1.4.5-6-4768184c" status="release" pubdate="20201111144622" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalacenter/bloop" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3003" time="0" location="C:\Users\adria\.ivy2\cache\scala_2.10\sbt_0.13\ch.epfl.scala\sbt-bloop\ivy-1.4.5-6-4768184c.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.10_0.13/1.4.5-6-4768184c/sbt-bloop-1.4.5-6-4768184c.pom"/>
 				<caller organisation="default" name="pmp-build-build" conf="compile, runtime" rev="1.4.5-6-4768184c" rev-constraint-default="1.4.5-6-4768184c" rev-constraint-dynamic="1.4.5-6-4768184c" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
@@ -20,6 +20,14 @@
 					<artifact name="sbt-bloop" type="jar" ext="jar" status="no" details="" size="14152883" time="0" location="C:\Users\adria\.ivy2\cache\scala_2.10\sbt_0.13\ch.epfl.scala\sbt-bloop\jars\sbt-bloop-1.4.5-6-4768184c.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.10_0.13/1.4.5-6-4768184c/sbt-bloop-1.4.5-6-4768184c.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20201123234225" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="default" name="pmp-build-build" conf="compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
