@@ -4,7 +4,7 @@
 		module="figarowork$sources_2.12"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20201124092929"
+		publication="20201203082724"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
