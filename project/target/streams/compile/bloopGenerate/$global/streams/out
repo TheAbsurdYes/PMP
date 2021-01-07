@@ -1,4 +1,4 @@
-[debug] [pmp-build] Classpath dependencies List()
-[debug] [pmp-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'pmp-build' to 'C:\Users\adria\Documents\PMP\project\.bloop\pmp-build.json'
-[success] Generated .bloop\pmp-build.json
+[0m[[0mdebug[0m] [0m[pmp-build] Classpath dependencies List()[0m
+[0m[[0mdebug[0m] [0m[pmp-build] Dependencies from configurations List()[0m
+[0m[[0mdebug[0m] [0mBloop wrote the configuration of project 'pmp-build' to 'C:\Users\adria\Documents\PMP\project\.bloop\pmp-build.json'[0m
+[0m[[32msuccess[0m] [0mGenerated .bloop\pmp-build.json[0m

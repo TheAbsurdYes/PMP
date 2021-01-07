@@ -7,8 +7,44 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20201123234458"/>
+		date="20210107091310"/>
 	<dependencies>
+		<module organisation="com.github.wookietreiber" name="scala-chart_2.12">
+			<revision name="0.5.1" status="release" pubdate="20161108001238" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/wookietreiber/scala-chart" extra-info.apiURL="http://wookietreiber.github.io/scala-chart/0.5.1/api/" downloaded="false" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="29">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="3582" time="0" location="C:\Users\adria\.ivy2\cache\com.github.wookietreiber\scala-chart_2.12\ivy-0.5.1.xml" searched="true" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/wookietreiber/scala-chart_2.12/0.5.1/scala-chart_2.12-0.5.1.pom"/>
+				<caller organisation="figarowork" name="figarowork_2.12" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-chart_2.12" type="jar" ext="jar" status="no" details="" size="353884" time="0" location="C:\Users\adria\.ivy2\cache\com.github.wookietreiber\scala-chart_2.12\jars\scala-chart_2.12-0.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/wookietreiber/scala-chart_2.12/0.5.1/scala-chart_2.12-0.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jfree" name="jfreechart">
+			<revision name="1.0.19" status="release" pubdate="20140731153450" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jfree.org/jfreechart/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="4089" time="0" location="C:\Users\adria\.ivy2\cache\org.jfree\jfreechart\ivy-1.0.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.pom"/>
+				<caller organisation="com.github.wookietreiber" name="scala-chart_2.12" conf="default, compile, runtime, master" rev="1.0.19" rev-constraint-default="1.0.19" rev-constraint-dynamic="1.0.19" callerrev="0.5.1"/>
+				<artifacts>
+					<artifact name="jfreechart" type="jar" ext="jar" status="no" details="" size="1565065" time="0" location="C:\Users\adria\.ivy2\cache\org.jfree\jfreechart\jars\jfreechart-1.0.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jfree" name="jcommon">
+			<revision name="1.0.23" status="release" pubdate="20140724183644" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jfree.org/jcommon/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="3697" time="0" location="C:\Users\adria\.ivy2\cache\org.jfree\jcommon\ivy-1.0.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jfree/jcommon/1.0.23/jcommon-1.0.23.pom"/>
+				<caller organisation="org.jfree" name="jfreechart" conf="compile, runtime" rev="1.0.23" rev-constraint-default="1.0.23" rev-constraint-dynamic="1.0.23" callerrev="1.0.19"/>
+				<artifacts>
+					<artifact name="jcommon" type="jar" ext="jar" status="no" details="" size="330246" time="0" location="C:\Users\adria\.ivy2\cache\org.jfree\jcommon\jars\jcommon-1.0.23.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.cra.figaro" name="figaro_2.12">
 			<revision name="5.0.0.0" status="release" pubdate="20170824204812" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.github.com/p2t2/figaro" downloaded="false" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Figaro License" url="https://github.com/p2t2/figaro/blob/master/LICENSE"/>
@@ -25,11 +61,18 @@
 			<revision name="2.0.0" status="release" pubdate="20170116085718" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="2696" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang.modules\scala-swing_2.12\ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-swing_2.12/2.0.0/scala-swing_2.12-2.0.0.pom"/>
+				<caller organisation="com.github.wookietreiber" name="scala-chart_2.12" conf="default, compile, runtime, master" rev="2.0.0-M2" rev-constraint-default="2.0.0-M2" rev-constraint-dynamic="2.0.0-M2" callerrev="0.5.1"/>
 				<caller organisation="com.cra.figaro" name="figaro_2.12" conf="default, compile, runtime, master" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="5.0.0.0"/>
 				<artifacts>
 					<artifact name="scala-swing_2.12" type="bundle" ext="jar" status="no" details="" size="736838" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang.modules\scala-swing_2.12\bundles\scala-swing_2.12-2.0.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-swing_2.12/2.0.0/scala-swing_2.12-2.0.0.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.0.0-M2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.0.0"/>
+				<caller organisation="com.github.wookietreiber" name="scala-chart_2.12" conf="default, compile, runtime, master" rev="2.0.0-M2" rev-constraint-default="2.0.0-M2" rev-constraint-dynamic="2.0.0-M2" callerrev="0.5.1"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -364,6 +407,7 @@
 				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\adria\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.pom"/>
 				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.3.2"/>
 				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.6.1"/>
+				<caller organisation="com.github.wookietreiber" name="scala-chart_2.12" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.5.1"/>
 				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.8.0"/>
 				<caller organisation="org.scala-lang.modules" name="scala-swing_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="2.0.0"/>
 				<caller organisation="figarowork" name="figarowork_2.12" conf="compile" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.1-SNAPSHOT"/>

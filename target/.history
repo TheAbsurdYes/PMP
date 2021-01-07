@@ -78,3 +78,10 @@ compile
 runMain Lab10.Ex1
 exit
 nvim exercitii.Ex1
+runMain Lab12.Ex1
+clean
+compile
+runMain Lab12.Ex1
+clean
+compile
+runMain Lab12.Ex1
