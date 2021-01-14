@@ -85,3 +85,4 @@ runMain Lab12.Ex1
 clean
 compile
 runMain Lab12.Ex1
+exit
