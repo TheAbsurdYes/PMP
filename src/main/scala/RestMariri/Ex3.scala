@@ -30,10 +30,10 @@ object Ex3 {
     )
 
     value(iteration) = CPD(state(iteration),
-      'A -> Flip(0.25),
-      'B -> Flip(0.25),
-      'C -> Flip(0.25),
-      'D -> Flip(0.25))
+      'buna -> Flip(0.25),
+      'nu_prea_buna -> Flip(0.25),
+      'bolnav -> Flip(0.25),
+      'decedat -> Flip(0.25))
   }
 
   def main(args: Array[String])
